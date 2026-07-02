@@ -1,0 +1,9 @@
+# Compiled binaries and object files
+*.exe
+*.o
+*.obj
+*.out
+hello
+
+# Build directories
+build/
