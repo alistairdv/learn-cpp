@@ -7,13 +7,13 @@ FROM gcc:latest
 
 # These commands copy your files into the specified directory in the image
 # and set that as the working location
-COPY . /usr/src/hello_world
-WORKDIR /usr/src/hello_world
+COPY . /usr/src/app
+WORKDIR /usr/src/app
 
 # This command compiles your app using GCC, adjust for your source code
-RUN g++ -std=c++23 -Wall -Werror -Weffc++ -Wextra -Wconversion -Wsign-conversion -pedantic-errors -o hello_world hello_world.cpp
+RUN g++ -std=c++23 -Wall -Werror -Weffc++ -Wextra -Wconversion -Wsign-conversion -pedantic-errors -o app main.cpp
 
 # This command runs your application, comment out this line to compile only
-CMD ["./hello_world"]
+CMD ["./app"]
 
 LABEL Name=learncpp Version=0.0.1

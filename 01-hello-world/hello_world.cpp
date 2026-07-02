@@ -1,6 +1,11 @@
-#include <iostream>
+void foo(unsigned int)
+{
+}
 
-int main() {
-    std::cout << "Hello world!";
+int main()
+{
+    unsigned int x { 5 };
+    foo(x);
+
     return 0;
 }
